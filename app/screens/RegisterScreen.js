@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Text, StyleSheet } from "react-native";
 import { View, Container } from "native-base";
-import LoginForm from "../components/forms/LoginForm";
+import RegisterForm from "../components/forms/RegisterForm";
+
 
 export default class HomeAuth extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ export default class HomeAuth extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <LoginForm {...this.props}/>
+        <RegisterForm />
       </Container>
     );
   }

@@ -10,7 +10,7 @@ import {
   Button
 } from "native-base";
 import { StyleSheet } from "react-native";
-export default function LoginForm(props) {
+export default function LoginForm() {
   return (
     <Container
       style={{
@@ -22,15 +22,19 @@ export default function LoginForm(props) {
           <Label>Username:</Label>
           <Input />
         </Item>
+        <Item inlineLabel>
+          <Label>Email:</Label>
+          <Input />
+        </Item>
         <Item inlineLabel last>
           <Label>Password:</Label>
           <Input />
         </Item>
         <Button full>
-          <Text>Login</Text>
+          <Text>Register</Text>
         </Button>
-        <Button onPress={() => props.navigation.navigate('RegisterScreen')} transparent style={{alignSelf: "center"}}>
-          <Text>Don't have an account?</Text>
+        <Button transparent style={{alignSelf: "center"}}>
+          <Text>Cancel</Text>
         </Button>
       </Form>
     </Container>
